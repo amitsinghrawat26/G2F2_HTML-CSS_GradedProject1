@@ -1,3 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header-navigation{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 10px;
+}
+
 header{
     color: white;
     background-color: rgb(88, 88, 88);
@@ -5,8 +17,8 @@ header{
     text-decoration: none;
     font-size: xx-large;
     font-weight: bolder;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     padding: 15px;
 } 
 
@@ -57,14 +69,33 @@ ul li:hover{
     background-color: white;
 }   
 
-
 footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
+.animation-container{
+    border: 3px green solid;
+    margin: 5px;
+    margin-top: 110px;
+    min-height: 750px;
+    animation-name: changeAnimation;
+    background-size: cover;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
 
+@keyframes changeAnimation {
+    0% { background-image: url("Images/Animation/ani1.jpg"); }
+    25% { background-image: url("Images/Animation/ani2.png"); }
+    50% { background-image: url("Images/Animation/ani3.jpg"); }
+    75% { background-image: url("Images/Animation/ani4.jpg"); }
+    100% { background-image: url("Images/Animation/ani5.jpg"); }
+}
 
 
