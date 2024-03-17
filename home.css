@@ -98,7 +98,6 @@ footer{
 
 
 
-
 #covid-care , #diabetes-care {
     display: inline-block;
     word-spacing: 20px;
@@ -134,15 +133,16 @@ p{
     color: blue;
     font-size: large;
     line-height: 0.5;
+    word-spacing: normal;
     font-family: 'Times New Roman';
 }
 
 button{
     font-weight: bolder;
     font-size: x-large;
-    border: 2px blue solid;
+    border: 2px rgb(15, 105, 241) solid;
     width: 70%;
-    padding: 5px;
+    padding: 6px;
     color: orange;
     border-radius: 5px;
 }
